@@ -111,6 +111,7 @@
     <Compile Include="Assets\Flooded_Grounds\Scripts\FPSController\CharController_Motor.cs" />
     <Compile Include="Assets\Flooded_Grounds\Scripts\FPSDisplay.cs" />
     <Compile Include="Assets\Flooded_Grounds\Scripts\WaterFloat.cs" />
+    <Compile Include="Assets\My_scripts\oneshotsound.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
