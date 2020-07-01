@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class CharController_Motor : MonoBehaviour {
 
-	public float speed = 10.0f;
+	private float speed = 10.0f;
+	public float WalkSpeed = 7.0f;
+	public float Runspeed = 12.0f;
+
 	public float sensitivity = 30.0f;
 	public float WaterHeight = 15.5f;
 	CharacterController character;
 	public GameObject cam;
+
+
+	public GameObject cam1;
+	public GameObject cam2;
+
+	private bool NightVision = false;
 	float moveFB, moveLR;
 	float rotX, rotY;
 	public bool webGLRightClickRotation = true;
@@ -21,6 +30,10 @@ public class CharController_Motor : MonoBehaviour {
 		if (Application.isEditor) {
 			webGLRightClickRotation = false;
 			sensitivity = sensitivity * 1.5f;
+			speed = WalkSpeed;
+			Cursor.visible = false;
+			cam = cam1;
+			cam2.gameObject.SetActive(false);
 		}
 	}
 
@@ -36,6 +49,30 @@ public class CharController_Motor : MonoBehaviour {
 
 
 	void Update(){
+		if (Input.GetButton("Run"))
+		{
+			speed = Runspeed;
+		}
+		else
+		{
+			speed = WalkSpeed;
+		}
+		if (Input.GetKeyDown(KeyCode.N))
+		{
+			if(NightVision==false)
+			{
+				NightVision = true;
+				cam2.gameObject.SetActive(true);
+				cam = cam2;
+			}
+			else
+			{	
+				cam = cam1;
+				NightVision = false;
+				cam2.gameObject.SetActive(false);
+				
+			}
+		}
 		moveFB = Input.GetAxis ("Horizontal") * speed;
 		moveLR = Input.GetAxis ("Vertical") * speed;
 

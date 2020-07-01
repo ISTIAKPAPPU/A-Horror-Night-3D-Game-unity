@@ -113,6 +113,9 @@
     <Compile Include="Assets\Flooded_Grounds\Scripts\FPSDisplay.cs" />
     <Compile Include="Assets\Flooded_Grounds\Scripts\WaterFloat.cs" />
     <Compile Include="Assets\My_scripts\EnemyMove.cs" />
+    <Compile Include="Assets\My_scripts\FlashLight.cs" />
+    <Compile Include="Assets\My_scripts\SaveScript.cs" />
+    <Compile Include="Assets\My_scripts\WeaponScript.cs" />
     <Compile Include="Assets\My_scripts\oneshotsound.cs" />
     <Compile Include="Assets\Nokobot\ModernGuns_Handgun\Demo Assets\SimpleShoot.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
