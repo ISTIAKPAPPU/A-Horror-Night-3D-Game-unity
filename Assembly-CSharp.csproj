@@ -114,6 +114,7 @@
     <Compile Include="Assets\Flooded_Grounds\Scripts\WaterFloat.cs" />
     <Compile Include="Assets\My_scripts\EnemyMove.cs" />
     <Compile Include="Assets\My_scripts\FlashLight.cs" />
+    <Compile Include="Assets\My_scripts\InventoryScript.cs" />
     <Compile Include="Assets\My_scripts\SaveScript.cs" />
     <Compile Include="Assets\My_scripts\WeaponScript.cs" />
     <Compile Include="Assets\My_scripts\oneshotsound.cs" />
